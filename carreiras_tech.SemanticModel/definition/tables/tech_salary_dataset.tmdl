@@ -1,0 +1,418 @@
+table tech_salary_dataset
+	lineageTag: 6b2e2da3-1815-494b-b79d-fb5e02636932
+
+	column employee_id
+		dataType: string
+		lineageTag: 755e6133-1484-4a69-ae03-e2468f3f7ea7
+		summarizeBy: none
+		sourceColumn: employee_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column first_name
+		dataType: string
+		lineageTag: eb372cc9-479a-41c1-8297-0b4f37a35d2a
+		summarizeBy: none
+		sourceColumn: first_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column last_name
+		dataType: string
+		lineageTag: 2dd42e3e-3759-4823-bee4-e362d35bd9e5
+		summarizeBy: none
+		sourceColumn: last_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column age
+		dataType: int64
+		formatString: 0
+		lineageTag: 8d69fe0e-46a1-41b7-9829-313ad305593d
+		summarizeBy: sum
+		sourceColumn: age
+
+		annotation SummarizationSetBy = Automatic
+
+	column gender
+		dataType: string
+		lineageTag: ab5dae4b-fecf-45ba-ad62-701c64f319e0
+		summarizeBy: none
+		sourceColumn: gender
+
+		annotation SummarizationSetBy = Automatic
+
+	column location
+		dataType: string
+		lineageTag: 7a790f6c-c68b-4367-95dd-4244a7f5e8b8
+		summarizeBy: none
+		sourceColumn: location
+
+		annotation SummarizationSetBy = Automatic
+
+	column currency
+		dataType: string
+		lineageTag: 96bc9dd3-e46a-4aeb-b2be-ca3b70c37110
+		summarizeBy: none
+		sourceColumn: currency
+
+		annotation SummarizationSetBy = Automatic
+
+	column primary_tech_field
+		dataType: string
+		lineageTag: 0fc6709b-6ac6-4f47-9431-4691c347a4d5
+		summarizeBy: none
+		sourceColumn: primary_tech_field
+
+		annotation SummarizationSetBy = Automatic
+
+	column job_title
+		dataType: string
+		lineageTag: fa6c54f1-5710-41d7-a4b8-216eeb92a450
+		summarizeBy: none
+		sourceColumn: job_title
+
+		annotation SummarizationSetBy = Automatic
+
+	column employment_type
+		dataType: string
+		lineageTag: fa7b192e-e226-44d5-95fd-581c2b7aac9b
+		summarizeBy: none
+		sourceColumn: employment_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column work_arrangement
+		dataType: string
+		lineageTag: 42733249-5b64-41a3-a299-f4f3c7ae9d4b
+		summarizeBy: none
+		sourceColumn: work_arrangement
+
+		annotation SummarizationSetBy = Automatic
+
+	column experience_years_total
+		dataType: string
+		lineageTag: f6d4a161-2f17-40e1-8d09-6fe8e59a45f6
+		summarizeBy: none
+		sourceColumn: experience_years_total
+
+		annotation SummarizationSetBy = Automatic
+
+	column experience_years_in_field
+		dataType: string
+		lineageTag: 944a2670-ef64-45f7-ae3c-fac8ef4a660b
+		summarizeBy: none
+		sourceColumn: experience_years_in_field
+
+		annotation SummarizationSetBy = Automatic
+
+	column education_level
+		dataType: string
+		lineageTag: 30d4e13b-c02c-4ce6-b6ec-3a407b9f1571
+		summarizeBy: none
+		sourceColumn: education_level
+
+		annotation SummarizationSetBy = Automatic
+
+	column languages_spoken
+		dataType: string
+		lineageTag: f5db6e6f-757d-4096-a606-0a654bf063e1
+		summarizeBy: none
+		sourceColumn: languages_spoken
+
+		annotation SummarizationSetBy = Automatic
+
+	column skills
+		dataType: string
+		lineageTag: cd918c8f-2615-41f3-af8f-1fd66e0e3e68
+		summarizeBy: none
+		sourceColumn: skills
+
+		annotation SummarizationSetBy = Automatic
+
+	column primary_skill
+		dataType: string
+		lineageTag: 35d591fa-7398-4611-a70b-7e7ed64570bd
+		summarizeBy: none
+		sourceColumn: primary_skill
+
+		annotation SummarizationSetBy = Automatic
+
+	column num_skills
+		dataType: string
+		lineageTag: 108037ca-2070-4009-8105-c554aa3c36c6
+		summarizeBy: none
+		sourceColumn: num_skills
+
+		annotation SummarizationSetBy = Automatic
+
+	column certifications
+		dataType: string
+		lineageTag: 593e37a6-6541-4600-96ab-313692d1fff7
+		summarizeBy: none
+		sourceColumn: certifications
+
+		annotation SummarizationSetBy = Automatic
+
+	column company_size
+		dataType: string
+		lineageTag: a075dff3-d48d-4184-98c0-982866e4f555
+		summarizeBy: none
+		sourceColumn: company_size
+
+		annotation SummarizationSetBy = Automatic
+
+	column annual_salary_usd
+		dataType: string
+		lineageTag: ae2d2831-2927-4ef9-a238-8b52833f02be
+		summarizeBy: none
+		sourceColumn: annual_salary_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column monthly_salary_usd
+		dataType: string
+		lineageTag: b2b200b9-9f6a-4fa2-a9ac-06add65978c6
+		summarizeBy: none
+		sourceColumn: monthly_salary_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column hourly_rate_usd
+		dataType: string
+		lineageTag: 3a014abb-9fd4-4489-b4d5-253331dd46b3
+		summarizeBy: none
+		sourceColumn: hourly_rate_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column annual_bonus_usd
+		dataType: string
+		lineageTag: ef30b512-74ee-4beb-b54f-174c045ec01c
+		summarizeBy: none
+		sourceColumn: annual_bonus_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column bonus_percentage
+		dataType: string
+		lineageTag: a6819291-f74b-4f52-89dd-90f771aebb76
+		summarizeBy: none
+		sourceColumn: bonus_percentage
+
+		annotation SummarizationSetBy = Automatic
+
+	column has_equity
+		dataType: string
+		lineageTag: 39c85737-2e95-4562-8163-0bd3784ee38e
+		summarizeBy: none
+		sourceColumn: has_equity
+
+		annotation SummarizationSetBy = Automatic
+
+	column equity_total_value_usd
+		dataType: string
+		lineageTag: 4dd0fd33-df5e-40cf-90df-a30ec6149344
+		summarizeBy: none
+		sourceColumn: equity_total_value_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column equity_vesting_years
+		dataType: string
+		lineageTag: 0badc88c-c99b-4f02-9dbe-cbd50c7465cb
+		summarizeBy: none
+		sourceColumn: equity_vesting_years
+
+		annotation SummarizationSetBy = Automatic
+
+	column effective_tax_rate_pct
+		dataType: string
+		lineageTag: 35bf9795-56be-43ff-ae84-47ffc820d43d
+		summarizeBy: none
+		sourceColumn: effective_tax_rate_pct
+
+		annotation SummarizationSetBy = Automatic
+
+	column annual_tax_usd
+		dataType: string
+		lineageTag: c11d0ae1-1a8a-4751-84c4-4bf1ccf6c320
+		summarizeBy: none
+		sourceColumn: annual_tax_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column annual_net_salary_usd
+		dataType: string
+		lineageTag: f780fd2b-bed2-49cb-87c0-6315999b9a1f
+		summarizeBy: none
+		sourceColumn: annual_net_salary_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column monthly_net_salary_usd
+		dataType: string
+		lineageTag: 3713c931-fdb9-4122-8ed5-3eb94e3e77d8
+		summarizeBy: none
+		sourceColumn: monthly_net_salary_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column monthly_housing_usd
+		dataType: string
+		lineageTag: 1dd2720a-b027-42e8-8c81-c7e72e7fff5a
+		summarizeBy: none
+		sourceColumn: monthly_housing_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column monthly_transportation_usd
+		dataType: string
+		lineageTag: 65d2df91-adf6-4c81-ac52-ecacbb8427f7
+		summarizeBy: none
+		sourceColumn: monthly_transportation_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column monthly_food_usd
+		dataType: string
+		lineageTag: 7ba2dbda-dcfe-46d7-9487-6022b04dabff
+		summarizeBy: none
+		sourceColumn: monthly_food_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column monthly_utilities_usd
+		dataType: string
+		lineageTag: 5d68cdf5-af92-4da7-8ae6-f175e6f1f157
+		summarizeBy: none
+		sourceColumn: monthly_utilities_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column monthly_healthcare_usd
+		dataType: string
+		lineageTag: 15a5d5a4-07ff-4e98-a5f8-f88b6463351e
+		summarizeBy: none
+		sourceColumn: monthly_healthcare_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column monthly_entertainment_usd
+		dataType: string
+		lineageTag: 7c100131-ade1-43ac-aa87-661dcf13bf2d
+		summarizeBy: none
+		sourceColumn: monthly_entertainment_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column monthly_education_loan_usd
+		dataType: string
+		lineageTag: 3ccac1af-5b82-440a-903f-fa6c96d4eec8
+		summarizeBy: none
+		sourceColumn: monthly_education_loan_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column monthly_childcare_usd
+		dataType: string
+		lineageTag: d24111c7-ab3c-404d-8734-51f643cf3699
+		summarizeBy: none
+		sourceColumn: monthly_childcare_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column monthly_miscellaneous_usd
+		dataType: string
+		lineageTag: 58e05866-bf6d-4edb-8a53-1f80cd4422e4
+		summarizeBy: none
+		sourceColumn: monthly_miscellaneous_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column monthly_total_expenses_usd
+		dataType: string
+		lineageTag: 9cdde49d-a8b8-4a97-b576-178e2613319d
+		summarizeBy: none
+		sourceColumn: monthly_total_expenses_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column annual_total_expenses_usd
+		dataType: string
+		lineageTag: f66de5c6-5af3-453d-ae25-5f8efe89c698
+		summarizeBy: none
+		sourceColumn: annual_total_expenses_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column annual_savings_usd
+		dataType: string
+		lineageTag: 06de19ef-65d1-41a7-a36f-a1f90dcaec63
+		summarizeBy: none
+		sourceColumn: annual_savings_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column vacation_weeks
+		dataType: string
+		lineageTag: 71c1690f-34a5-4800-b1e2-2fd31d22e550
+		summarizeBy: none
+		sourceColumn: vacation_weeks
+
+		annotation SummarizationSetBy = Automatic
+
+	column overtime_hours_per_month
+		dataType: string
+		lineageTag: 677303b4-9253-47fa-b1e2-4a7bd4869511
+		summarizeBy: none
+		sourceColumn: overtime_hours_per_month
+
+		annotation SummarizationSetBy = Automatic
+
+	column months_since_last_promotion
+		dataType: string
+		lineageTag: 4d84f0b5-8aea-49b4-8135-80bee1330a42
+		summarizeBy: none
+		sourceColumn: months_since_last_promotion
+
+		annotation SummarizationSetBy = Automatic
+
+	column num_previous_companies
+		dataType: string
+		lineageTag: 10c09c63-b6e6-46c2-9de8-4849d0c382a9
+		summarizeBy: none
+		sourceColumn: num_previous_companies
+
+		annotation SummarizationSetBy = Automatic
+
+	column job_satisfaction_score
+		dataType: string
+		lineageTag: 38fe5f76-deba-46d8-993d-bc864bef4f18
+		summarizeBy: none
+		sourceColumn: job_satisfaction_score
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_actively_looking
+		dataType: string
+		lineageTag: a054f540-d071-4fac-9abd-338260f1c72f
+		summarizeBy: none
+		sourceColumn: is_actively_looking
+
+		annotation SummarizationSetBy = Automatic
+
+	partition tech_salary_dataset = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\Isadora\OneDrive\Desktop\carreiras_tech\tech_salary_dataset.csv"),[Delimiter=",", Columns=50, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"age", Int64.Type}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegação
+

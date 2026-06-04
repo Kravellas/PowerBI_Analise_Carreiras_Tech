@@ -1,0 +1,6 @@
+relationship AutoDetected_65dec674-5668-41a0-8113-e70467b71933
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: fato_skills.employee_id
+	toColumn: tech_salary_dataset.employee_id
+
