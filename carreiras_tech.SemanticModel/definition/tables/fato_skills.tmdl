@@ -512,7 +512,7 @@ table fato_skills
 		source = ```
 				let
 				    // 1. Cole os dois caminhos aqui (mantenha a barra \ no final)
-				    CaminhoIsadora = "C:\Users\Isadora\OneDrive\Desktop\carreiras_tech\",
+				    CaminhoIsadora = "C:\Users\Isadora\OneDrive\Desktop\PowerBI_Analise_Carreiras_Tech\",
 				    CaminhoMeu = "C:\Users\thorc\Desktop\PowerBI_Analise_Carreiras_Tech\", 
 				
 				    // 2. A regra que escolhe o computador correto
