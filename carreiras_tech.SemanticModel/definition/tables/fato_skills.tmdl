@@ -509,9 +509,19 @@ table fato_skills
 
 	partition fato_skills = m
 		mode: import
-		source =
+		source = ```
 				let
-				    Fonte = Csv.Document(File.Contents("C:\Users\Isadora\OneDrive\Desktop\carreiras_tech\tech_salary_dataset.csv"),[Delimiter=",", Columns=50, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    // 1. Cole os dois caminhos aqui (mantenha a barra \ no final)
+				    CaminhoIsadora = "C:\Users\Isadora\OneDrive\Desktop\carreiras_tech\",
+				    CaminhoMeu = "C:\Users\thorc\Desktop\PowerBI_Analise_Carreiras_Tech\", 
+				
+				    // 2. A regra que escolhe o computador correto
+				    CaminhoEscolhido = if QuemEstaUsando = "Thor" then CaminhoMeu else CaminhoIsadora,
+				
+				    // 3. Trocamos o caminho fixo pelo caminho inteligente combinado ao nome do arquivo
+				    Fonte = Csv.Document(File.Contents(CaminhoEscolhido & "tech_salary_dataset.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    
+				    // 4. Daqui para baixo são as suas etapas originais restauradas e corrigidas
 				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
 				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"age", Int64.Type}}),
 				    #"Dividir Coluna por Delimitador" = Table.SplitColumn(#"Tipo Alterado", "skills", Splitter.SplitTextByDelimiter(";", QuoteStyle.Csv), {"skills.1", "skills.2", "skills.3", "skills.4", "skills.5", "skills.6", "skills.7", "skills.8"}),
@@ -520,6 +530,7 @@ table fato_skills
 				    #"Tipo Alterado2" = Table.TransformColumnTypes(#"Dividir Coluna por Delimitador1",{{"certifications.1", type text}, {"certifications.2", type text}, {"certifications.3", type text}})
 				in
 				    #"Tipo Alterado2"
+				```
 
 	annotation PBI_NavigationStepName = Navegação
 

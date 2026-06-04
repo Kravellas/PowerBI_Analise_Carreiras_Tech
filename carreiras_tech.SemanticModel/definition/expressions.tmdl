@@ -1,0 +1,21 @@
+expression CaminhoPC2 = "C:\Users\thorc\Desktop\PowerBI_Analise_Carreiras_Tech\" meta [IsParameterQuery=true, Type="Any", IsParameterQueryRequired=true]
+	lineageTag: f6780b10-fc0f-4ded-a783-ec4702dbd3eb
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Text
+
+expression CaminhoPC1 = "C:\Users\Isadora\OneDrive\Desktop\carreiras_tech\" meta [IsParameterQuery=true, Type="Any", IsParameterQueryRequired=true]
+	lineageTag: 843fa366-3150-420e-815f-24eae9672c0f
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Text
+
+expression QuemEstaUsando = "Thor" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 4c415bb7-6493-48db-b34f-b2b3750ab1bf
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Text
+

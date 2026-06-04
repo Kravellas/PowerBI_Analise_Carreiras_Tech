@@ -406,7 +406,7 @@ table tech_salary_dataset
 		mode: import
 		source =
 				let
-				    Fonte = Csv.Document(File.Contents("C:\Users\Isadora\OneDrive\Desktop\carreiras_tech\tech_salary_dataset.csv"),[Delimiter=",", Columns=50, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    Fonte = Csv.Document(File.Contents("C:\Users\thorc\Desktop\PowerBI_Analise_Carreiras_Tech\tech_salary_dataset.csv"),[Delimiter=",", Columns=50, Encoding=1252, QuoteStyle=QuoteStyle.None]),
 				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
 				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"age", Int64.Type}})
 				in
