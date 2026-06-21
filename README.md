@@ -4,7 +4,7 @@
 
 Este projeto foi desenvolvido para a disciplina de Business Intelligence II com o objetivo de integrar os conceitos de modelagem dimensional, transformações em Power Query, cálculos em linguagem DAX, Row-Level Security (RLS) e versionamento em formato de código aberto (.pbip).
 
-A solução atua no domínio corporativo de People Analytics para responder de forma quantitativa e visual à pergunta central: **"What Factors Increase Salary?" (Quais fatores aumentam o salário?)**. O escopo abrange a identificação das competências técnicas (primary_skill), cargos e níveis de experiência com maior impacto na folha salarial. Adicionalmente, audita a distribuição demográfica e investiga disparidades salariais e de representatividade entre gêneros para subsidiar decisões estratégicas de contratação, remuneração isonômica e mitigação de picos de esforço que geram turnover voluntário.
+A solução atua no domínio corporativo de People Analytics para responder de forma quantitativa e visual à pergunta central: **Quais fatores aumentam o salário?**. O escopo abrange a identificação das competências técnicas (primary_skill), cargos e níveis de experiência com maior impacto na folha salarial. Adicionalmente, audita a distribuição demográfica e investiga disparidades salariais e de representatividade entre gêneros para subsidiar decisões estratégicas de contratação, remuneração isonômica e mitigação de picos de esforço que geram turnover voluntário.
 
 ---
 
@@ -28,8 +28,7 @@ O modelo calcula de forma automatizada os seguintes indicadores analíticos estr
 ## 3. Origem e Link do Dataset Utilizado
 
 Os dados reais utilizados nesta solução foram extraídos de fonte pública, íntegra e auditável, em estrita conformidade com os requisitos da disciplina.
-* **Link de Acesso ao Dataset:** [Inserir o link direto do Kaggle, Hugging Face ou Portal Oficial escolhido pela dupla]
-* **Documentação de Origem:** Os metadados, licenças de uso e o dicionário de dados detalhado encontram-se registrados no arquivo local localizado em `[data/README.md](https://www.kaggle.com/datasets/mabubakrsiddiq/salary-and-skills-ds-what-factors-increases-salary)`.
+* **Link de Acesso ao Dataset:** `(https://www.kaggle.com/datasets/mabubakrsiddiq/salary-and-skills-ds-what-factors-increases-salary)`
 
 ---
 
