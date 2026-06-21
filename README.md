@@ -29,7 +29,7 @@ O modelo calcula de forma automatizada os seguintes indicadores analíticos estr
 
 Os dados reais utilizados nesta solução foram extraídos de fonte pública, íntegra e auditável, em estrita conformidade com os requisitos da disciplina.
 * **Link de Acesso ao Dataset:** [Inserir o link direto do Kaggle, Hugging Face ou Portal Oficial escolhido pela dupla]
-* **Documentação de Origem:** Os metadados, licenças de uso e o dicionário de dados detalhado encontram-se registrados no arquivo local localizado em `data/README.md`.
+* **Documentação de Origem:** Os metadados, licenças de uso e o dicionário de dados detalhado encontram-se registrados no arquivo local localizado em `[data/README.md](https://www.kaggle.com/datasets/mabubakrsiddiq/salary-and-skills-ds-what-factors-increases-salary)`.
 
 ---
 

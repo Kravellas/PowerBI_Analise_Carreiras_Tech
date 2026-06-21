@@ -12,7 +12,7 @@ expression CaminhoPC1 = "C:\Users\Isadora\OneDrive\Desktop\PowerBI_Analise_Carre
 
 	annotation PBI_ResultType = Text
 
-expression QuemEstaUsando = "Isadora" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+expression QuemEstaUsando = "Thor" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
 	lineageTag: 4c415bb7-6493-48db-b34f-b2b3750ab1bf
 
 	annotation PBI_NavigationStepName = Navegação
