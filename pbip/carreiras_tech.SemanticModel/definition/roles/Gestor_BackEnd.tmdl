@@ -1,0 +1,7 @@
+role Gestor_BackEnd
+	modelPermission: read
+
+	tablePermission dim_job = [setor_atuacao_principal] == "Backend Development"
+
+	annotation PBI_Id = 10c66776bf434904864a0fd309ef8b0e
+

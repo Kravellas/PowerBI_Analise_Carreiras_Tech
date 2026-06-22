@@ -1,0 +1,457 @@
+table fato_skills
+	lineageTag: aca283e6-d476-4f23-963b-243998fad988
+
+	column tempo_experiencia_total
+		dataType: int64
+		formatString: 0
+		lineageTag: 615af5ef-abff-4f70-b3b0-1583e61f95f1
+		summarizeBy: sum
+		sourceColumn: tempo_experiencia_total
+
+		annotation SummarizationSetBy = Automatic
+
+	column anos_experiencia_na_area
+		dataType: int64
+		formatString: 0
+		lineageTag: f0e3e23c-8f7d-4b9a-8045-9e3a51eaf0ed
+		summarizeBy: sum
+		sourceColumn: anos_experiencia_na_area
+
+		annotation SummarizationSetBy = Automatic
+
+	column num_skills
+		dataType: int64
+		formatString: 0
+		lineageTag: eee76080-3c7f-4b6c-9d49-cc7ef8d047ff
+		summarizeBy: sum
+		sourceColumn: num_skills
+
+		annotation SummarizationSetBy = Automatic
+
+	column salario_anual_usd
+		dataType: decimal
+		formatString: 0
+		lineageTag: d1f23768-d7ff-401a-bc01-549e6e28c96f
+		summarizeBy: sum
+		sourceColumn: salario_anual_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column salario_mensal_usd
+		dataType: decimal
+		formatString: 0
+		lineageTag: 67d9ee72-0906-400b-8701-d01dbb4fd180
+		summarizeBy: sum
+		sourceColumn: salario_mensal_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column salario_por_hora_usd
+		dataType: decimal
+		formatString: 0
+		lineageTag: 24f1bcd8-1e8b-4c76-86f3-d8466e9c9212
+		summarizeBy: sum
+		sourceColumn: salario_por_hora_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column bonus_anual_usd
+		dataType: decimal
+		formatString: 0
+		lineageTag: f0295f6b-0961-4764-8832-e145329e9948
+		summarizeBy: sum
+		sourceColumn: bonus_anual_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column bonus_percentual
+		dataType: int64
+		formatString: 0
+		lineageTag: 480d5d39-1928-4b44-adfa-65e39d675927
+		summarizeBy: sum
+		sourceColumn: bonus_percentual
+
+		annotation SummarizationSetBy = Automatic
+
+	column quitado
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: d59ea308-87fa-450d-8796-c27d5321a9d5
+		summarizeBy: none
+		sourceColumn: quitado
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor_total_quitado_usd
+		dataType: decimal
+		formatString: 0
+		lineageTag: 1c3f6a92-4f5c-4786-9a7d-4745ab1dcfa7
+		summarizeBy: sum
+		sourceColumn: valor_total_quitado_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column equity_vesting_years
+		dataType: int64
+		formatString: 0
+		lineageTag: 8bbfdee2-0281-408c-802d-2682b2eb9869
+		summarizeBy: sum
+		sourceColumn: equity_vesting_years
+
+		annotation SummarizationSetBy = Automatic
+
+	column effective_tax_rate_pct
+		dataType: int64
+		formatString: 0
+		lineageTag: c65cb4a3-25c6-4da8-bf6a-f40a90b7c56c
+		summarizeBy: sum
+		sourceColumn: effective_tax_rate_pct
+
+		annotation SummarizationSetBy = Automatic
+
+	column taxa_anual_usd
+		dataType: int64
+		formatString: 0
+		lineageTag: 0876c4bf-4fb7-4dac-8e86-c242e85e4da2
+		summarizeBy: sum
+		sourceColumn: taxa_anual_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column remuneracao_anual_liquida_usd
+		dataType: decimal
+		formatString: 0
+		lineageTag: 52fe1d87-a727-414e-9202-1565aa596012
+		summarizeBy: sum
+		sourceColumn: remuneracao_anual_liquida_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column remuneracao_mensal_liquida_usd
+		dataType: decimal
+		formatString: 0
+		lineageTag: 3da11b0f-2b49-4966-80dd-9ea95a3f10b4
+		summarizeBy: sum
+		sourceColumn: remuneracao_mensal_liquida_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column despesas_mensais_moradia_usd
+		dataType: decimal
+		formatString: 0
+		lineageTag: 86700cc5-b6eb-4543-871a-539dba0bc343
+		summarizeBy: sum
+		sourceColumn: despesas_mensais_moradia_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column despesas_mensais_transporte_usd
+		dataType: decimal
+		formatString: 0
+		lineageTag: a45bf406-8fe5-4414-b319-ce28383f1243
+		summarizeBy: sum
+		sourceColumn: despesas_mensais_transporte_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column despesas_mensais_alimentacao_usd
+		dataType: decimal
+		formatString: 0
+		lineageTag: cfce4729-0090-47b6-a114-4a23dfa9be4b
+		summarizeBy: sum
+		sourceColumn: despesas_mensais_alimentacao_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column despesas_mensais_servicos_basicos_usd
+		dataType: decimal
+		formatString: 0
+		lineageTag: b057b2ad-5c10-400a-8e3f-539b00194777
+		summarizeBy: sum
+		sourceColumn: despesas_mensais_servicos_basicos_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column despesas_mensais_plano_saude_usd
+		dataType: decimal
+		formatString: 0
+		lineageTag: cdac28b3-2841-418f-9eba-f0aee6914952
+		summarizeBy: sum
+		sourceColumn: despesas_mensais_plano_saude_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column despesas_mensais_entretenimento_usd
+		dataType: decimal
+		formatString: 0
+		lineageTag: bacb3f6d-a844-43f7-898f-d6b4d3901a14
+		summarizeBy: sum
+		sourceColumn: despesas_mensais_entretenimento_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column despesas_mensal_credito_educativo_usd
+		dataType: decimal
+		formatString: 0
+		lineageTag: 8989f8e7-fcc6-439a-a4f7-26c3e7886019
+		summarizeBy: sum
+		sourceColumn: despesas_mensal_credito_educativo_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column despesas_mensais_creche_baba_usd
+		dataType: decimal
+		formatString: 0
+		lineageTag: 3e635627-af7b-4578-b4f8-aafc113a23f5
+		summarizeBy: sum
+		sourceColumn: despesas_mensais_creche_baba_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column despesas_variadas_mensais_usd
+		dataType: decimal
+		formatString: 0
+		lineageTag: d3824220-6038-4c93-9d95-9d5920b67b25
+		summarizeBy: sum
+		sourceColumn: despesas_variadas_mensais_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column despesas_totais_mensais_usd
+		dataType: decimal
+		formatString: 0
+		lineageTag: e9e7b976-8b41-46c9-be23-161d1b1567a0
+		summarizeBy: sum
+		sourceColumn: despesas_totais_mensais_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column despesas_totais_anuais_usd
+		dataType: decimal
+		formatString: 0
+		lineageTag: 21007522-4a22-45ec-a917-ea9e4779973a
+		summarizeBy: sum
+		sourceColumn: despesas_totais_anuais_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column economia_anual_usd
+		dataType: decimal
+		formatString: 0
+		lineageTag: e04e3225-d1aa-414d-82de-f87ca2d89788
+		summarizeBy: sum
+		sourceColumn: economia_anual_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column semana_de_ferias
+		dataType: int64
+		formatString: 0
+		lineageTag: deb4fc81-821c-4df3-ab91-7fd44cd2de3c
+		summarizeBy: sum
+		sourceColumn: semana_de_ferias
+
+		annotation SummarizationSetBy = Automatic
+
+	column horas_extras_por_mes
+		dataType: int64
+		formatString: 0
+		lineageTag: 5f29ffdf-273a-41ce-b4de-0accbc37293e
+		summarizeBy: sum
+		sourceColumn: horas_extras_por_mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column meses_desde_ultima_promocao
+		dataType: int64
+		formatString: 0
+		lineageTag: 09251011-a431-4a91-a896-cd6f14211074
+		summarizeBy: sum
+		sourceColumn: meses_desde_ultima_promocao
+
+		annotation SummarizationSetBy = Automatic
+
+	column quantidade_empresas_anteriores
+		dataType: int64
+		formatString: 0
+		lineageTag: 453e2fab-31d5-4afc-a970-793125af117b
+		summarizeBy: sum
+		sourceColumn: quantidade_empresas_anteriores
+
+		annotation SummarizationSetBy = Automatic
+
+	column pontuacao_satisfacao_trabalho
+		dataType: int64
+		formatString: 0
+		lineageTag: 3df6db9c-6798-43e7-a367-b4514239f668
+		summarizeBy: sum
+		sourceColumn: pontuacao_satisfacao_trabalho
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_actively_looking
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 6413d3f3-e473-4b35-abe2-0af839e6cb86
+		summarizeBy: none
+		sourceColumn: is_actively_looking
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'dim_location.id_local'
+		dataType: int64
+		formatString: 0
+		lineageTag: 043e6cc4-0149-40ce-9300-bbad436b2c74
+		summarizeBy: none
+		sourceColumn: dim_location.id_local
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'dim_company.id_empresa'
+		dataType: int64
+		formatString: 0
+		lineageTag: f08a7c69-9baf-4e12-9a21-fe8aa8644e18
+		summarizeBy: none
+		sourceColumn: dim_company.id_empresa
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'dim_job.id_cargo'
+		dataType: int64
+		formatString: 0
+		lineageTag: b4f12c19-0601-429b-83fa-11e16200d705
+		summarizeBy: none
+		sourceColumn: dim_job.id_cargo
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'dim_employee.id_funcionario'
+		dataType: string
+		lineageTag: 506d7e2a-8c40-446a-b153-f7920c0cd2c2
+		summarizeBy: none
+		sourceColumn: dim_employee.id_funcionario
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'dim_skills_profile.id_perfil'
+		dataType: int64
+		formatString: 0
+		lineageTag: a8a17281-ede3-4ad2-b0b9-7f1753ba456e
+		summarizeBy: none
+		sourceColumn: dim_skills_profile.id_perfil
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_pesquisa
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: b095f20e-ac98-40ef-9809-570519651758
+		summarizeBy: none
+		sourceColumn: data_pesquisa
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition fato_skills = m
+		mode: import
+		source = ```
+				let
+				    // 1. Cole os dois caminhos aqui (mantenha a barra \ no final)
+				    CaminhoIsadora = "C:\Users\Isadora\OneDrive\Desktop\PowerBI_Analise_Carreiras_Tech\",
+				    CaminhoMeu = "C:\Users\thorc\Desktop\PowerBI_Analise_Carreiras_Tech\", 
+				
+				    // 2. A regra que escolhe o computador correto
+				    CaminhoEscolhido = if QuemEstaUsando = "Thor" then CaminhoMeu else CaminhoIsadora,
+				
+				    // 3. Trocamos o caminho fixo pelo caminho inteligente combinado ao nome do arquivo
+				    Fonte = Csv.Document(File.Contents(CaminhoEscolhido & "tech_salary_dataset.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    
+				    // 4. Daqui para baixo são as suas etapas originais restauradas e corrigidas
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"age", Int64.Type}}),
+				    #"Dividir Coluna por Delimitador" = Table.SplitColumn(#"Tipo Alterado", "skills", Splitter.SplitTextByDelimiter(";", QuoteStyle.Csv), {"skills.1", "skills.2", "skills.3", "skills.4", "skills.5", "skills.6", "skills.7", "skills.8"}),
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Dividir Coluna por Delimitador",{{"employee_id", type text}, {"first_name", type text}, {"last_name", type text}, {"gender", type text}, {"location", type text}, {"currency", type text}, {"primary_tech_field", type text}, {"job_title", type text}, {"employment_type", type text}, {"work_arrangement", type text}, {"experience_years_total", Int64.Type}, {"experience_years_in_field", Int64.Type}, {"education_level", type text}, {"languages_spoken", type text}, {"skills.1", type text}, {"skills.2", type text}, {"skills.3", type text}, {"skills.4", type text}, {"skills.5", type text}, {"skills.6", type text}, {"skills.7", type text}, {"skills.8", type text}, {"primary_skill", type text}, {"num_skills", Int64.Type}, {"certifications", type text}, {"company_size", type text}, {"annual_salary_usd", Int64.Type}, {"monthly_salary_usd", Int64.Type}, {"hourly_rate_usd", Int64.Type}, {"annual_bonus_usd", Int64.Type}, {"bonus_percentage", Int64.Type}, {"has_equity", type logical}, {"equity_total_value_usd", Int64.Type}, {"equity_vesting_years", Int64.Type}, {"effective_tax_rate_pct", Int64.Type}, {"annual_tax_usd", Int64.Type}, {"annual_net_salary_usd", Int64.Type}, {"monthly_net_salary_usd", Int64.Type}, {"monthly_housing_usd", Int64.Type}, {"monthly_transportation_usd", Int64.Type}, {"monthly_food_usd", Int64.Type}, {"monthly_utilities_usd", Int64.Type}, {"monthly_healthcare_usd", Int64.Type}, {"monthly_entertainment_usd", Int64.Type}, {"monthly_education_loan_usd", Int64.Type}, {"monthly_childcare_usd", Int64.Type}, {"monthly_miscellaneous_usd", Int64.Type}, {"monthly_total_expenses_usd", Int64.Type}, {"annual_total_expenses_usd", Int64.Type}, {"annual_savings_usd", Int64.Type}, {"vacation_weeks", Int64.Type}, {"overtime_hours_per_month", Int64.Type}, {"months_since_last_promotion", Int64.Type}, {"num_previous_companies", Int64.Type}, {"job_satisfaction_score", Int64.Type}, {"is_actively_looking", type logical}}),
+				    #"Dividir Coluna por Delimitador1" = Table.SplitColumn(#"Tipo Alterado1", "certifications", Splitter.SplitTextByDelimiter(";", QuoteStyle.Csv), {"certifications.1", "certifications.2", "certifications.3"}),
+				    #"Tipo Alterado2" = Table.TransformColumnTypes(#"Dividir Coluna por Delimitador1",{{"certifications.1", type text}, {"certifications.2", type text}, {"certifications.3", type text}}),
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"Tipo Alterado2",{{"first_name", "nome"}, {"last_name", "sobrenome"}, {"age", "idade"}, {"gender", "genero"}}),
+				    #"Valor Substituído" = Table.ReplaceValue(#"Colunas Renomeadas","Female","Feminino",Replacer.ReplaceText,{"genero"}),
+				    #"Valor Substituído1" = Table.ReplaceValue(#"Valor Substituído","Male","Masculino",Replacer.ReplaceText,{"genero"}),
+				    #"Valor Substituído2" = Table.ReplaceValue(#"Valor Substituído1","Prefer not to say","Prefiro não informar",Replacer.ReplaceText,{"genero"}),
+				    #"Valor Substituído3" = Table.ReplaceValue(#"Valor Substituído2","Non-Binary","Não-Binário",Replacer.ReplaceText,{"genero"}),
+				    #"Colunas Renomeadas1" = Table.RenameColumns(#"Valor Substituído3",{{"experience_years_total", "tempo_experiencia_total"}, {"employee_id", "id_funcionario"}, {"location", "local_trabalho"}, {"currency", "tipo_moeda"}, {"primary_tech_field", "setor_atuacao_principal"}, {"job_title", "cargo"}, {"employment_type", "tipo_contrato"}, {"work_arrangement", "formato_trabalho"}, {"experience_years_in_field", "anos_experiencia_na_area"}, {"languages_spoken", "linguas"}, {"certifications.1", "certificados.1"}, {"certifications.2", "certificados.2"}, {"certifications.3", "certificados.3"}, {"company_size", "porte_empresarial"}, {"annual_salary_usd", "salario_anual_usd"}, {"monthly_salary_usd", "salario_mensal_usd"}, {"hourly_rate_usd", "salario_por_hora_usd"}, {"annual_bonus_usd", "bonus_anual_usd"}, {"bonus_percentage", "bonus_percentual"}, {"annual_tax_usd", "taxa_anual_usd"}, {"job_satisfaction_score", "pontuacao_satisfacao_trabalho"}, {"num_previous_companies", "quantidade_empresas_anteriores"}, {"months_since_last_promotion", "meses_desde_ultima_promocao"}, {"overtime_hours_per_month", "horas_extras_por_mes"}, {"vacation_weeks", "semana_de_ferias"}, {"annual_savings_usd", "economia_anual_usd"}, {"annual_total_expenses_usd", "despesas_totais_anuais_usd"}}),
+				    #"Tipo Alterado3" = Table.TransformColumnTypes(#"Colunas Renomeadas1",{{"despesas_totais_anuais_usd", Currency.Type}, {"economia_anual_usd", Currency.Type}}),
+				    #"Colunas Renomeadas2" = Table.RenameColumns(#"Tipo Alterado3",{{"monthly_total_expenses_usd", "despesas_totais_mensais_usd"}}),
+				    #"Tipo Alterado4" = Table.TransformColumnTypes(#"Colunas Renomeadas2",{{"despesas_totais_mensais_usd", Currency.Type}}),
+				    #"Colunas Renomeadas3" = Table.RenameColumns(#"Tipo Alterado4",{{"monthly_miscellaneous_usd", "despesas_variadas_mensais_usd"}}),
+				    #"Tipo Alterado5" = Table.TransformColumnTypes(#"Colunas Renomeadas3",{{"despesas_variadas_mensais_usd", Currency.Type}}),
+				    #"Colunas Renomeadas4" = Table.RenameColumns(#"Tipo Alterado5",{{"monthly_childcare_usd", "despesas_mensais_creche_baba_usd"}}),
+				    #"Tipo Alterado6" = Table.TransformColumnTypes(#"Colunas Renomeadas4",{{"despesas_mensais_creche_baba_usd", Currency.Type}}),
+				    #"Colunas Renomeadas5" = Table.RenameColumns(#"Tipo Alterado6",{{"monthly_education_loan_usd", "despesas_mensal_credito_educativo_usd"}}),
+				    #"Tipo Alterado7" = Table.TransformColumnTypes(#"Colunas Renomeadas5",{{"despesas_mensal_credito_educativo_usd", Currency.Type}}),
+				    #"Colunas Renomeadas6" = Table.RenameColumns(#"Tipo Alterado7",{{"monthly_entertainment_usd", "despesas_mensais_entretenimento_usd"}}),
+				    #"Tipo Alterado8" = Table.TransformColumnTypes(#"Colunas Renomeadas6",{{"despesas_mensais_entretenimento_usd", Currency.Type}}),
+				    #"Colunas Renomeadas7" = Table.RenameColumns(#"Tipo Alterado8",{{"monthly_healthcare_usd", "despesas_mensais_plano_saude_usd"}}),
+				    #"Tipo Alterado9" = Table.TransformColumnTypes(#"Colunas Renomeadas7",{{"despesas_mensais_plano_saude_usd", Currency.Type}}),
+				    #"Colunas Renomeadas8" = Table.RenameColumns(#"Tipo Alterado9",{{"monthly_utilities_usd", "despesas_mensais_servicos_basicos_usd"}}),
+				    #"Tipo Alterado10" = Table.TransformColumnTypes(#"Colunas Renomeadas8",{{"despesas_mensais_servicos_basicos_usd", Currency.Type}}),
+				    #"Colunas Renomeadas9" = Table.RenameColumns(#"Tipo Alterado10",{{"monthly_food_usd", "despesas_mensais_alimentacao_usd"}}),
+				    #"Tipo Alterado11" = Table.TransformColumnTypes(#"Colunas Renomeadas9",{{"despesas_mensais_alimentacao_usd", Currency.Type}}),
+				    #"Colunas Renomeadas10" = Table.RenameColumns(#"Tipo Alterado11",{{"monthly_transportation_usd", "despesas_mensais_transporte_usd"}}),
+				    #"Tipo Alterado12" = Table.TransformColumnTypes(#"Colunas Renomeadas10",{{"despesas_mensais_transporte_usd", Currency.Type}}),
+				    #"Colunas Renomeadas11" = Table.RenameColumns(#"Tipo Alterado12",{{"monthly_housing_usd", "despesas_mensais_moradia_usd"}}),
+				    #"Tipo Alterado13" = Table.TransformColumnTypes(#"Colunas Renomeadas11",{{"despesas_mensais_moradia_usd", Currency.Type}}),
+				    #"Colunas Renomeadas12" = Table.RenameColumns(#"Tipo Alterado13",{{"monthly_net_salary_usd", "remuneracao_mensal_liquida_usd"}}),
+				    #"Tipo Alterado14" = Table.TransformColumnTypes(#"Colunas Renomeadas12",{{"remuneracao_mensal_liquida_usd", Currency.Type}}),
+				    #"Colunas Renomeadas13" = Table.RenameColumns(#"Tipo Alterado14",{{"annual_net_salary_usd", "remuneracao_anual_liquida_usd"}}),
+				    #"Tipo Alterado15" = Table.TransformColumnTypes(#"Colunas Renomeadas13",{{"remuneracao_anual_liquida_usd", Currency.Type}}),
+				    #"Colunas Renomeadas14" = Table.RenameColumns(#"Tipo Alterado15",{{"education_level", "nivel_de_formacao"}, {"has_equity", "quitado"}, {"equity_total_value_usd", "valor_total_quitado_usd"}}),
+				    #"Tipo Alterado16" = Table.TransformColumnTypes(#"Colunas Renomeadas14",{{"valor_total_quitado_usd", Currency.Type}, {"bonus_anual_usd", Currency.Type}, {"salario_por_hora_usd", Currency.Type}, {"salario_mensal_usd", Currency.Type}, {"salario_anual_usd", Currency.Type}}),
+				    #"Valor Substituído4" = Table.ReplaceValue(#"Tipo Alterado16","Small (11-50)","Pequeno(11-50)",Replacer.ReplaceText,{"porte_empresarial"}),
+				    #"Valor Substituído5" = Table.ReplaceValue(#"Valor Substituído4","Medium (51-200)","Médio (51-200)",Replacer.ReplaceText,{"porte_empresarial"}),
+				    #"Valor Substituído6" = Table.ReplaceValue(#"Valor Substituído5","Large (201-1000)","Grande (201-1000)",Replacer.ReplaceText,{"porte_empresarial"}),
+				    #"Valor Substituído7" = Table.ReplaceValue(#"Valor Substituído6","Platform Engineer","Engenheiro de Plataforma",Replacer.ReplaceText,{"cargo"}),
+				    #"Valor Substituído8" = Table.ReplaceValue(#"Valor Substituído7","Software Engineer","Engenheiro de Software",Replacer.ReplaceText,{"cargo"}),
+				    #"Valor Substituído9" = Table.ReplaceValue(#"Valor Substituído8","QA Engineer","Engenheiro de QA",Replacer.ReplaceText,{"cargo"}),
+				    #"Valor Substituído10" = Table.ReplaceValue(#"Valor Substituído9","Full-time","Tempo Integral",Replacer.ReplaceText,{"tipo_contrato"}),
+				    #"Valor Substituído11" = Table.ReplaceValue(#"Valor Substituído10","Contract","Contrato de tabalho",Replacer.ReplaceText,{"tipo_contrato"}),
+				    #"Valor Substituído12" = Table.ReplaceValue(#"Valor Substituído11","Part-time","Meio Período",Replacer.ReplaceText,{"tipo_contrato"}),
+				    #"Valor Substituído13" = Table.ReplaceValue(#"Valor Substituído12","Remote","Remoto",Replacer.ReplaceText,{"formato_trabalho"}),
+				    #"Valor Substituído14" = Table.ReplaceValue(#"Valor Substituído13","Hybrid","Híbrido",Replacer.ReplaceText,{"formato_trabalho"}),
+				    #"Consultas Mescladas" = Table.NestedJoin(#"Valor Substituído14", {"id_funcionario"}, dim_employee, {"id_funcionario"}, "dim_employee", JoinKind.LeftOuter),
+				    #"dim_employee Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas", "dim_employee", {"id_funcionario"}, {"dim_employee.id_funcionario"}),
+				    #"Colunas Reordenadas" = Table.ReorderColumns(#"dim_employee Expandido",{"dim_employee.id_funcionario", "id_funcionario", "nome", "sobrenome", "idade", "genero", "local_trabalho", "tipo_moeda", "setor_atuacao_principal", "cargo", "tipo_contrato", "formato_trabalho", "tempo_experiencia_total", "anos_experiencia_na_area", "nivel_de_formacao", "linguas", "skills.1", "skills.2", "skills.3", "skills.4", "skills.5", "skills.6", "skills.7", "skills.8", "primary_skill", "num_skills", "certificados.1", "certificados.2", "certificados.3", "porte_empresarial", "salario_anual_usd", "salario_mensal_usd", "salario_por_hora_usd", "bonus_anual_usd", "bonus_percentual", "quitado", "valor_total_quitado_usd", "equity_vesting_years", "effective_tax_rate_pct", "taxa_anual_usd", "remuneracao_anual_liquida_usd", "remuneracao_mensal_liquida_usd", "despesas_mensais_moradia_usd", "despesas_mensais_transporte_usd", "despesas_mensais_alimentacao_usd", "despesas_mensais_servicos_basicos_usd", "despesas_mensais_plano_saude_usd", "despesas_mensais_entretenimento_usd", "despesas_mensal_credito_educativo_usd", "despesas_mensais_creche_baba_usd", "despesas_variadas_mensais_usd", "despesas_totais_mensais_usd", "despesas_totais_anuais_usd", "economia_anual_usd", "semana_de_ferias", "horas_extras_por_mes", "meses_desde_ultima_promocao", "quantidade_empresas_anteriores", "pontuacao_satisfacao_trabalho", "is_actively_looking"}),
+				    #"Linhas em Branco Removidas" = Table.SelectRows(#"Colunas Reordenadas", each not List.IsEmpty(List.RemoveMatchingItems(Record.FieldValues(_), {"", null}))),
+				    #"Erros Removidos" = Table.RemoveRowsWithErrors(#"Linhas em Branco Removidas", {"dim_employee.id_funcionario"}),
+				    #"Consultas Mescladas1" = Table.NestedJoin(#"Erros Removidos", {"cargo"}, dim_job, {"cargo"}, "dim_job", JoinKind.LeftOuter),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Consultas Mescladas1",{"dim_employee.id_funcionario", "dim_job"}),
+				    #"Consultas Mescladas2" = Table.NestedJoin(#"Colunas Removidas", {"local_trabalho", "tipo_moeda"}, dim_location, {"local_trabalho", "tipo_moeda"}, "dim_location", JoinKind.LeftOuter),
+				    #"dim_location Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas2", "dim_location", {"id_local"}, {"dim_location.id_local"}),
+				    #"Colunas Reordenadas1" = Table.ReorderColumns(#"dim_location Expandido",{"id_funcionario", "dim_location.id_local", "nome", "sobrenome", "idade", "genero", "local_trabalho", "tipo_moeda", "setor_atuacao_principal", "cargo", "tipo_contrato", "formato_trabalho", "tempo_experiencia_total", "anos_experiencia_na_area", "nivel_de_formacao", "linguas", "skills.1", "skills.2", "skills.3", "skills.4", "skills.5", "skills.6", "skills.7", "skills.8", "primary_skill", "num_skills", "certificados.1", "certificados.2", "certificados.3", "porte_empresarial", "salario_anual_usd", "salario_mensal_usd", "salario_por_hora_usd", "bonus_anual_usd", "bonus_percentual", "quitado", "valor_total_quitado_usd", "equity_vesting_years", "effective_tax_rate_pct", "taxa_anual_usd", "remuneracao_anual_liquida_usd", "remuneracao_mensal_liquida_usd", "despesas_mensais_moradia_usd", "despesas_mensais_transporte_usd", "despesas_mensais_alimentacao_usd", "despesas_mensais_servicos_basicos_usd", "despesas_mensais_plano_saude_usd", "despesas_mensais_entretenimento_usd", "despesas_mensal_credito_educativo_usd", "despesas_mensais_creche_baba_usd", "despesas_variadas_mensais_usd", "despesas_totais_mensais_usd", "despesas_totais_anuais_usd", "economia_anual_usd", "semana_de_ferias", "horas_extras_por_mes", "meses_desde_ultima_promocao", "quantidade_empresas_anteriores", "pontuacao_satisfacao_trabalho", "is_actively_looking"}),
+				    #"Colunas Removidas1" = Table.RemoveColumns(#"Colunas Reordenadas1",{"local_trabalho", "tipo_moeda"}),
+				    #"Consultas Mescladas3" = Table.NestedJoin(#"Colunas Removidas1", {"porte_empresarial"}, dim_company, {"porte_empresarial"}, "dim_company", JoinKind.LeftOuter),
+				    #"dim_company Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas3", "dim_company", {"id_empresa"}, {"dim_company.id_empresa"}),
+				    #"Colunas Reordenadas2" = Table.ReorderColumns(#"dim_company Expandido",{"id_funcionario", "dim_location.id_local", "dim_company.id_empresa", "nome", "sobrenome", "idade", "genero", "setor_atuacao_principal", "cargo", "tipo_contrato", "formato_trabalho", "tempo_experiencia_total", "anos_experiencia_na_area", "nivel_de_formacao", "linguas", "skills.1", "skills.2", "skills.3", "skills.4", "skills.5", "skills.6", "skills.7", "skills.8", "primary_skill", "num_skills", "certificados.1", "certificados.2", "certificados.3", "porte_empresarial", "salario_anual_usd", "salario_mensal_usd", "salario_por_hora_usd", "bonus_anual_usd", "bonus_percentual", "quitado", "valor_total_quitado_usd", "equity_vesting_years", "effective_tax_rate_pct", "taxa_anual_usd", "remuneracao_anual_liquida_usd", "remuneracao_mensal_liquida_usd", "despesas_mensais_moradia_usd", "despesas_mensais_transporte_usd", "despesas_mensais_alimentacao_usd", "despesas_mensais_servicos_basicos_usd", "despesas_mensais_plano_saude_usd", "despesas_mensais_entretenimento_usd", "despesas_mensal_credito_educativo_usd", "despesas_mensais_creche_baba_usd", "despesas_variadas_mensais_usd", "despesas_totais_mensais_usd", "despesas_totais_anuais_usd", "economia_anual_usd", "semana_de_ferias", "horas_extras_por_mes", "meses_desde_ultima_promocao", "quantidade_empresas_anteriores", "pontuacao_satisfacao_trabalho", "is_actively_looking"}),
+				    #"Consultas Mescladas4" = Table.NestedJoin(#"Colunas Reordenadas2", {"cargo", "setor_atuacao_principal", "tipo_contrato", "formato_trabalho"}, dim_job, {"cargo", "setor_atuacao_principal", "tipo_contrato", "formato_trabalho"}, "dim_job", JoinKind.LeftOuter),
+				    #"dim_job Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas4", "dim_job", {"id_cargo"}, {"dim_job.id_cargo"}),
+				    #"Colunas Reordenadas3" = Table.ReorderColumns(#"dim_job Expandido",{"id_funcionario", "dim_job.id_cargo", "dim_location.id_local", "dim_company.id_empresa", "nome", "sobrenome", "idade", "genero", "setor_atuacao_principal", "cargo", "tipo_contrato", "formato_trabalho", "tempo_experiencia_total", "anos_experiencia_na_area", "nivel_de_formacao", "linguas", "skills.1", "skills.2", "skills.3", "skills.4", "skills.5", "skills.6", "skills.7", "skills.8", "primary_skill", "num_skills", "certificados.1", "certificados.2", "certificados.3", "porte_empresarial", "salario_anual_usd", "salario_mensal_usd", "salario_por_hora_usd", "bonus_anual_usd", "bonus_percentual", "quitado", "valor_total_quitado_usd", "equity_vesting_years", "effective_tax_rate_pct", "taxa_anual_usd", "remuneracao_anual_liquida_usd", "remuneracao_mensal_liquida_usd", "despesas_mensais_moradia_usd", "despesas_mensais_transporte_usd", "despesas_mensais_alimentacao_usd", "despesas_mensais_servicos_basicos_usd", "despesas_mensais_plano_saude_usd", "despesas_mensais_entretenimento_usd", "despesas_mensal_credito_educativo_usd", "despesas_mensais_creche_baba_usd", "despesas_variadas_mensais_usd", "despesas_totais_mensais_usd", "despesas_totais_anuais_usd", "economia_anual_usd", "semana_de_ferias", "horas_extras_por_mes", "meses_desde_ultima_promocao", "quantidade_empresas_anteriores", "pontuacao_satisfacao_trabalho", "is_actively_looking"}),
+				    #"Colunas Removidas2" = Table.RemoveColumns(#"Colunas Reordenadas3",{"porte_empresarial", "id_funcionario", "setor_atuacao_principal", "cargo", "tipo_contrato", "formato_trabalho"}),
+				    #"Consultas Mescladas5" = Table.NestedJoin(#"Colunas Removidas2", {"nome", "sobrenome", "idade", "genero", "nivel_de_formacao"}, dim_employee, {"nome", "sobrenome", "idade", "genero", "nivel_de_formacao"}, "dim_employee", JoinKind.LeftOuter),
+				    #"dim_employee Expandido1" = Table.ExpandTableColumn(#"Consultas Mescladas5", "dim_employee", {"id_funcionario"}, {"dim_employee.id_funcionario"}),
+				    #"Colunas Reordenadas4" = Table.ReorderColumns(#"dim_employee Expandido1",{"dim_employee.id_funcionario", "dim_job.id_cargo", "dim_location.id_local", "dim_company.id_empresa", "tempo_experiencia_total", "anos_experiencia_na_area", "nome", "sobrenome", "idade", "genero", "nivel_de_formacao", "linguas", "skills.1", "skills.2", "skills.3", "skills.4", "skills.5", "skills.6", "skills.7", "skills.8", "primary_skill", "num_skills", "certificados.1", "certificados.2", "certificados.3", "salario_anual_usd", "salario_mensal_usd", "salario_por_hora_usd", "bonus_anual_usd", "bonus_percentual", "quitado", "valor_total_quitado_usd", "equity_vesting_years", "effective_tax_rate_pct", "taxa_anual_usd", "remuneracao_anual_liquida_usd", "remuneracao_mensal_liquida_usd", "despesas_mensais_moradia_usd", "despesas_mensais_transporte_usd", "despesas_mensais_alimentacao_usd", "despesas_mensais_servicos_basicos_usd", "despesas_mensais_plano_saude_usd", "despesas_mensais_entretenimento_usd", "despesas_mensal_credito_educativo_usd", "despesas_mensais_creche_baba_usd", "despesas_variadas_mensais_usd", "despesas_totais_mensais_usd", "despesas_totais_anuais_usd", "economia_anual_usd", "semana_de_ferias", "horas_extras_por_mes", "meses_desde_ultima_promocao", "quantidade_empresas_anteriores", "pontuacao_satisfacao_trabalho", "is_actively_looking"}),
+				    #"Colunas Removidas3" = Table.RemoveColumns(#"Colunas Reordenadas4",{"nome", "sobrenome", "idade", "genero", "nivel_de_formacao"}),
+				    #"Consultas Mescladas6" = Table.NestedJoin(#"Colunas Removidas3", {"skills.1", "skills.2", "skills.3", "skills.4", "skills.5", "skills.6", "skills.7", "skills.8", "primary_skill", "linguas", "certificados.1", "certificados.2", "certificados.3"}, dim_skills_profile, {"skills.1", "skills.2", "skills.3", "skills.4", "skills.5", "skills.6", "skills.7", "skills.8", "primary_skill", "linguas", "certificados.1", "certificados.2", "certificados.3"}, "dim_skills_profile", JoinKind.LeftOuter),
+				    #"dim_skills_profile Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas6", "dim_skills_profile", {"id_perfil"}, {"dim_skills_profile.id_perfil"}),
+				    #"Colunas Reordenadas5" = Table.ReorderColumns(#"dim_skills_profile Expandido",{"dim_employee.id_funcionario", "dim_job.id_cargo", "dim_location.id_local", "dim_company.id_empresa", "dim_skills_profile.id_perfil", "tempo_experiencia_total", "anos_experiencia_na_area", "linguas", "skills.1", "skills.2", "skills.3", "skills.4", "skills.5", "skills.6", "skills.7", "skills.8", "primary_skill", "num_skills", "certificados.1", "certificados.2", "certificados.3", "salario_anual_usd", "salario_mensal_usd", "salario_por_hora_usd", "bonus_anual_usd", "bonus_percentual", "quitado", "valor_total_quitado_usd", "equity_vesting_years", "effective_tax_rate_pct", "taxa_anual_usd", "remuneracao_anual_liquida_usd", "remuneracao_mensal_liquida_usd", "despesas_mensais_moradia_usd", "despesas_mensais_transporte_usd", "despesas_mensais_alimentacao_usd", "despesas_mensais_servicos_basicos_usd", "despesas_mensais_plano_saude_usd", "despesas_mensais_entretenimento_usd", "despesas_mensal_credito_educativo_usd", "despesas_mensais_creche_baba_usd", "despesas_variadas_mensais_usd", "despesas_totais_mensais_usd", "despesas_totais_anuais_usd", "economia_anual_usd", "semana_de_ferias", "horas_extras_por_mes", "meses_desde_ultima_promocao", "quantidade_empresas_anteriores", "pontuacao_satisfacao_trabalho", "is_actively_looking"}),
+				    #"Colunas Removidas4" = Table.RemoveColumns(#"Colunas Reordenadas5",{"linguas", "skills.1", "skills.2", "skills.3", "skills.4", "skills.5", "skills.6", "skills.7", "skills.8", "primary_skill", "certificados.1", "certificados.2", "certificados.3"}),
+				    #"Linhas Classificadas" = Table.Sort(#"Colunas Removidas4",{{"dim_employee.id_funcionario", Order.Ascending}}),
+				    #"Personalização Adicionada" = Table.AddColumn(#"Linhas Classificadas", "data_pesquisa", each #date(2023, 1, 1)),
+				    #"Tipo Alterado17" = Table.TransformColumnTypes(#"Personalização Adicionada",{{"data_pesquisa", type date}})
+				in
+				    #"Tipo Alterado17"
+				```
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

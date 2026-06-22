@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "carreiras_tech"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ffde8560-d149-451b-9f1a-33765b2ef1d7"
+  }
+}

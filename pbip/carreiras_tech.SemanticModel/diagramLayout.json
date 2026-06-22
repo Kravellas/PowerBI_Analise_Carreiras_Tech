@@ -1,0 +1,125 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1450.7973562590239,
+            "y": 452.485725503651
+          },
+          "nodeIndex": "fato_skills",
+          "nodeLineageTag": "aca283e6-d476-4f23-963b-243998fad988",
+          "size": {
+            "height": 482,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 459.60582910786809
+          },
+          "nodeIndex": "dim_company",
+          "nodeLineageTag": "a3fbaac1-ab6a-46e5-bbfe-18e711f862b5",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 284,
+            "y": 459.60582910786809
+          },
+          "nodeIndex": "dim_employee",
+          "nodeLineageTag": "00bae21d-5af5-4211-bd5b-033f4c44a10e",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 568,
+            "y": 459.60582910786809
+          },
+          "nodeIndex": "dim_job",
+          "nodeLineageTag": "b72370ea-1f34-41a8-badf-58acea349878",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 852,
+            "y": 459.60582910786809
+          },
+          "nodeIndex": "dim_location",
+          "nodeLineageTag": "9b1a10ce-1c6a-4194-9187-77f36d230f27",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1136,
+            "y": 459.60582910786809
+          },
+          "nodeIndex": "dim_skills_profile",
+          "nodeLineageTag": "9036aaa4-ad5a-4bc6-a6d9-80ed4715d935",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2014.5048545426055,
+            "y": 459.23614210820193
+          },
+          "nodeIndex": "dim_calendario",
+          "nodeLineageTag": "8b469a09-0018-488a-a37a-a011bc09d2ae",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1734.7973562590239,
+            "y": 552.10582910786809
+          },
+          "nodeIndex": "_medidas",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas as tabelas",
+      "zoomValue": 24.967196396556869,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas as tabelas",
+  "defaultDiagram": "Todas as tabelas"
+}

@@ -1,0 +1,24 @@
+relationship AutoDetected_ac9e5ec6-6c43-4a84-898e-b9b163c06319
+	fromColumn: fato_skills.'dim_location.id_local'
+	toColumn: dim_location.id_local
+
+relationship AutoDetected_3a86112d-2916-48cb-80e2-c4f059220663
+	fromColumn: fato_skills.'dim_company.id_empresa'
+	toColumn: dim_company.id_empresa
+
+relationship AutoDetected_f4bd3fb6-8572-4c59-b25d-141d1158e589
+	fromColumn: fato_skills.'dim_job.id_cargo'
+	toColumn: dim_job.id_cargo
+
+relationship AutoDetected_a7e7c422-9207-4860-8306-5bff03d5b0df
+	fromColumn: fato_skills.'dim_employee.id_funcionario'
+	toColumn: dim_employee.id_funcionario
+
+relationship AutoDetected_ea5ac123-9883-4caf-aa80-a536be72fdb4
+	fromColumn: fato_skills.'dim_skills_profile.id_perfil'
+	toColumn: dim_skills_profile.id_perfil
+
+relationship 2ae29dfa-e7f5-9c4b-5ff2-cf4c83ac2475
+	fromColumn: fato_skills.data_pesquisa
+	toColumn: dim_calendario.Date
+

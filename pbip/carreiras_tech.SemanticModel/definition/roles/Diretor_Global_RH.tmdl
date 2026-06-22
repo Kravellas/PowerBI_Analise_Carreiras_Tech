@@ -1,0 +1,5 @@
+role Diretor_Global_RH
+	modelPermission: read
+
+	annotation PBI_Id = aa335fcfeace4b96be78fcaddd218d1a
+

@@ -1,0 +1,196 @@
+table dim_skills_profile
+	lineageTag: 9036aaa4-ad5a-4bc6-a6d9-80ed4715d935
+
+	column linguas
+		dataType: string
+		lineageTag: aa414203-b0be-4694-9b11-a8262761fbc5
+		summarizeBy: none
+		sourceColumn: linguas
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'skills.1'
+		dataType: string
+		lineageTag: be6b3908-0420-4306-b6d6-ae91161925d8
+		summarizeBy: none
+		sourceColumn: skills.1
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'skills.2'
+		dataType: string
+		lineageTag: 70bf3011-6660-4607-acc8-c45598eba45e
+		summarizeBy: none
+		sourceColumn: skills.2
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'skills.3'
+		dataType: string
+		lineageTag: eb9ae18b-179b-4574-9c34-0476b519ec6b
+		summarizeBy: none
+		sourceColumn: skills.3
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'skills.4'
+		dataType: string
+		lineageTag: 71f5ae3b-4c22-48fe-a11d-fe14a48255a1
+		summarizeBy: none
+		sourceColumn: skills.4
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'skills.5'
+		dataType: string
+		lineageTag: 4b8b4ec7-45f9-440b-a4d6-e5c0ca2bf225
+		summarizeBy: none
+		sourceColumn: skills.5
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'skills.6'
+		dataType: string
+		lineageTag: 9ca3eec2-33d1-49e0-8300-31a4f0d46a7c
+		summarizeBy: none
+		sourceColumn: skills.6
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'skills.7'
+		dataType: string
+		lineageTag: 1a22cd61-8e18-44d7-a767-a6fbd55afedb
+		summarizeBy: none
+		sourceColumn: skills.7
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'skills.8'
+		dataType: string
+		lineageTag: 131626e4-36bd-4fed-927a-a3d4b07b9d88
+		summarizeBy: none
+		sourceColumn: skills.8
+
+		annotation SummarizationSetBy = Automatic
+
+	column primary_skill
+		dataType: string
+		lineageTag: cd301e15-c289-4e87-900f-8d448a1ae5f1
+		summarizeBy: none
+		sourceColumn: primary_skill
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'certificados.1'
+		dataType: string
+		lineageTag: c1fb8bf9-9869-4064-9ca3-139e65683161
+		summarizeBy: none
+		sourceColumn: certificados.1
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'certificados.2'
+		dataType: string
+		lineageTag: 501aa3eb-0247-4596-9aba-a39c9ca8a0ef
+		summarizeBy: none
+		sourceColumn: certificados.2
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'certificados.3'
+		dataType: string
+		lineageTag: 357a41e3-0991-4b65-b0c1-965ebd70653e
+		summarizeBy: none
+		sourceColumn: certificados.3
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_perfil
+		dataType: int64
+		formatString: 0
+		lineageTag: 5629f997-8aa7-4945-9a81-5de92d4d7f38
+		summarizeBy: none
+		sourceColumn: id_perfil
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_skills_profile = m
+		mode: import
+		source = ```
+				let
+				    // 1. Cole os dois caminhos aqui (mantenha a barra \ no final)
+				    CaminhoIsadora = "C:\Users\Isadora\OneDrive\Desktop\PowerBI_Analise_Carreiras_Tech\",
+				    CaminhoMeu = "C:\Users\thorc\Desktop\PowerBI_Analise_Carreiras_Tech\", 
+				
+				    // 2. A regra que escolhe o computador correto
+				    CaminhoEscolhido = if QuemEstaUsando = "Thor" then CaminhoMeu else CaminhoIsadora,
+				
+				    // 3. Trocamos o caminho fixo pelo caminho inteligente combinado ao nome do arquivo
+				    Fonte = Csv.Document(File.Contents(CaminhoEscolhido & "tech_salary_dataset.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    
+				    // 4. Daqui para baixo são as suas etapas originais restauradas e corrigidas
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"age", Int64.Type}}),
+				    #"Dividir Coluna por Delimitador" = Table.SplitColumn(#"Tipo Alterado", "skills", Splitter.SplitTextByDelimiter(";", QuoteStyle.Csv), {"skills.1", "skills.2", "skills.3", "skills.4", "skills.5", "skills.6", "skills.7", "skills.8"}),
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Dividir Coluna por Delimitador",{{"employee_id", type text}, {"first_name", type text}, {"last_name", type text}, {"gender", type text}, {"location", type text}, {"currency", type text}, {"primary_tech_field", type text}, {"job_title", type text}, {"employment_type", type text}, {"work_arrangement", type text}, {"experience_years_total", Int64.Type}, {"experience_years_in_field", Int64.Type}, {"education_level", type text}, {"languages_spoken", type text}, {"skills.1", type text}, {"skills.2", type text}, {"skills.3", type text}, {"skills.4", type text}, {"skills.5", type text}, {"skills.6", type text}, {"skills.7", type text}, {"skills.8", type text}, {"primary_skill", type text}, {"num_skills", Int64.Type}, {"certifications", type text}, {"company_size", type text}, {"annual_salary_usd", Int64.Type}, {"monthly_salary_usd", Int64.Type}, {"hourly_rate_usd", Int64.Type}, {"annual_bonus_usd", Int64.Type}, {"bonus_percentage", Int64.Type}, {"has_equity", type logical}, {"equity_total_value_usd", Int64.Type}, {"equity_vesting_years", Int64.Type}, {"effective_tax_rate_pct", Int64.Type}, {"annual_tax_usd", Int64.Type}, {"annual_net_salary_usd", Int64.Type}, {"monthly_net_salary_usd", Int64.Type}, {"monthly_housing_usd", Int64.Type}, {"monthly_transportation_usd", Int64.Type}, {"monthly_food_usd", Int64.Type}, {"monthly_utilities_usd", Int64.Type}, {"monthly_healthcare_usd", Int64.Type}, {"monthly_entertainment_usd", Int64.Type}, {"monthly_education_loan_usd", Int64.Type}, {"monthly_childcare_usd", Int64.Type}, {"monthly_miscellaneous_usd", Int64.Type}, {"monthly_total_expenses_usd", Int64.Type}, {"annual_total_expenses_usd", Int64.Type}, {"annual_savings_usd", Int64.Type}, {"vacation_weeks", Int64.Type}, {"overtime_hours_per_month", Int64.Type}, {"months_since_last_promotion", Int64.Type}, {"num_previous_companies", Int64.Type}, {"job_satisfaction_score", Int64.Type}, {"is_actively_looking", type logical}}),
+				    #"Dividir Coluna por Delimitador1" = Table.SplitColumn(#"Tipo Alterado1", "certifications", Splitter.SplitTextByDelimiter(";", QuoteStyle.Csv), {"certifications.1", "certifications.2", "certifications.3"}),
+				    #"Tipo Alterado2" = Table.TransformColumnTypes(#"Dividir Coluna por Delimitador1",{{"certifications.1", type text}, {"certifications.2", type text}, {"certifications.3", type text}}),
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"Tipo Alterado2",{{"first_name", "nome"}, {"last_name", "sobrenome"}, {"age", "idade"}, {"gender", "genero"}}),
+				    #"Valor Substituído" = Table.ReplaceValue(#"Colunas Renomeadas","Female","Feminino",Replacer.ReplaceText,{"genero"}),
+				    #"Valor Substituído1" = Table.ReplaceValue(#"Valor Substituído","Male","Masculino",Replacer.ReplaceText,{"genero"}),
+				    #"Valor Substituído2" = Table.ReplaceValue(#"Valor Substituído1","Prefer not to say","Prefiro não informar",Replacer.ReplaceText,{"genero"}),
+				    #"Valor Substituído3" = Table.ReplaceValue(#"Valor Substituído2","Non-Binary","Não-Binário",Replacer.ReplaceText,{"genero"}),
+				    #"Colunas Renomeadas1" = Table.RenameColumns(#"Valor Substituído3",{{"experience_years_total", "tempo_experiencia_total"}, {"employee_id", "id_funcionario"}, {"location", "local_trabalho"}, {"currency", "tipo_moeda"}, {"primary_tech_field", "setor_atuacao_principal"}, {"job_title", "cargo"}, {"employment_type", "tipo_contrato"}, {"work_arrangement", "formato_trabalho"}, {"experience_years_in_field", "anos_experiencia_na_area"}, {"languages_spoken", "linguas"}, {"certifications.1", "certificados.1"}, {"certifications.2", "certificados.2"}, {"certifications.3", "certificados.3"}, {"company_size", "porte_empresarial"}, {"annual_salary_usd", "salario_anual_usd"}, {"monthly_salary_usd", "salario_mensal_usd"}, {"hourly_rate_usd", "salario_por_hora_usd"}, {"annual_bonus_usd", "bonus_anual_usd"}, {"bonus_percentage", "bonus_percentual"}, {"annual_tax_usd", "taxa_anual_usd"}, {"job_satisfaction_score", "pontuacao_satisfacao_trabalho"}, {"num_previous_companies", "quantidade_empresas_anteriores"}, {"months_since_last_promotion", "meses_desde_ultima_promocao"}, {"overtime_hours_per_month", "horas_extras_por_mes"}, {"vacation_weeks", "semana_de_ferias"}, {"annual_savings_usd", "economia_anual_usd"}, {"annual_total_expenses_usd", "despesas_totais_anuais_usd"}}),
+				    #"Tipo Alterado3" = Table.TransformColumnTypes(#"Colunas Renomeadas1",{{"despesas_totais_anuais_usd", Currency.Type}, {"economia_anual_usd", Currency.Type}}),
+				    #"Colunas Renomeadas2" = Table.RenameColumns(#"Tipo Alterado3",{{"monthly_total_expenses_usd", "despesas_totais_mensais_usd"}}),
+				    #"Tipo Alterado4" = Table.TransformColumnTypes(#"Colunas Renomeadas2",{{"despesas_totais_mensais_usd", Currency.Type}}),
+				    #"Colunas Renomeadas3" = Table.RenameColumns(#"Tipo Alterado4",{{"monthly_miscellaneous_usd", "despesas_variadas_mensais_usd"}}),
+				    #"Tipo Alterado5" = Table.TransformColumnTypes(#"Colunas Renomeadas3",{{"despesas_variadas_mensais_usd", Currency.Type}}),
+				    #"Colunas Renomeadas4" = Table.RenameColumns(#"Tipo Alterado5",{{"monthly_childcare_usd", "despesas_mensais_creche_baba_usd"}}),
+				    #"Tipo Alterado6" = Table.TransformColumnTypes(#"Colunas Renomeadas4",{{"despesas_mensais_creche_baba_usd", Currency.Type}}),
+				    #"Colunas Renomeadas5" = Table.RenameColumns(#"Tipo Alterado6",{{"monthly_education_loan_usd", "despesas_mensal_credito_educativo_usd"}}),
+				    #"Tipo Alterado7" = Table.TransformColumnTypes(#"Colunas Renomeadas5",{{"despesas_mensal_credito_educativo_usd", Currency.Type}}),
+				    #"Colunas Renomeadas6" = Table.RenameColumns(#"Tipo Alterado7",{{"monthly_entertainment_usd", "despesas_mensais_entretenimento_usd"}}),
+				    #"Tipo Alterado8" = Table.TransformColumnTypes(#"Colunas Renomeadas6",{{"despesas_mensais_entretenimento_usd", Currency.Type}}),
+				    #"Colunas Renomeadas7" = Table.RenameColumns(#"Tipo Alterado8",{{"monthly_healthcare_usd", "despesas_mensais_plano_saude_usd"}}),
+				    #"Tipo Alterado9" = Table.TransformColumnTypes(#"Colunas Renomeadas7",{{"despesas_mensais_plano_saude_usd", Currency.Type}}),
+				    #"Colunas Renomeadas8" = Table.RenameColumns(#"Tipo Alterado9",{{"monthly_utilities_usd", "despesas_mensais_servicos_basicos_usd"}}),
+				    #"Tipo Alterado10" = Table.TransformColumnTypes(#"Colunas Renomeadas8",{{"despesas_mensais_servicos_basicos_usd", Currency.Type}}),
+				    #"Colunas Renomeadas9" = Table.RenameColumns(#"Tipo Alterado10",{{"monthly_food_usd", "despesas_mensais_alimentacao_usd"}}),
+				    #"Tipo Alterado11" = Table.TransformColumnTypes(#"Colunas Renomeadas9",{{"despesas_mensais_alimentacao_usd", Currency.Type}}),
+				    #"Colunas Renomeadas10" = Table.RenameColumns(#"Tipo Alterado11",{{"monthly_transportation_usd", "despesas_mensais_transporte_usd"}}),
+				    #"Tipo Alterado12" = Table.TransformColumnTypes(#"Colunas Renomeadas10",{{"despesas_mensais_transporte_usd", Currency.Type}}),
+				    #"Colunas Renomeadas11" = Table.RenameColumns(#"Tipo Alterado12",{{"monthly_housing_usd", "despesas_mensais_moradia_usd"}}),
+				    #"Tipo Alterado13" = Table.TransformColumnTypes(#"Colunas Renomeadas11",{{"despesas_mensais_moradia_usd", Currency.Type}}),
+				    #"Colunas Renomeadas12" = Table.RenameColumns(#"Tipo Alterado13",{{"monthly_net_salary_usd", "remuneracao_mensal_liquida_usd"}}),
+				    #"Tipo Alterado14" = Table.TransformColumnTypes(#"Colunas Renomeadas12",{{"remuneracao_mensal_liquida_usd", Currency.Type}}),
+				    #"Colunas Renomeadas13" = Table.RenameColumns(#"Tipo Alterado14",{{"annual_net_salary_usd", "remuneracao_anual_liquida_usd"}}),
+				    #"Tipo Alterado15" = Table.TransformColumnTypes(#"Colunas Renomeadas13",{{"remuneracao_anual_liquida_usd", Currency.Type}}),
+				    #"Colunas Renomeadas14" = Table.RenameColumns(#"Tipo Alterado15",{{"education_level", "nivel_de_formacao"}, {"has_equity", "quitado"}, {"equity_total_value_usd", "valor_total_quitado_usd"}}),
+				    #"Tipo Alterado16" = Table.TransformColumnTypes(#"Colunas Renomeadas14",{{"valor_total_quitado_usd", Currency.Type}, {"bonus_anual_usd", Currency.Type}, {"salario_por_hora_usd", Currency.Type}, {"salario_mensal_usd", Currency.Type}, {"salario_anual_usd", Currency.Type}}),
+				    #"Valor Substituído4" = Table.ReplaceValue(#"Tipo Alterado16","Small (11-50)","Pequeno(11-50)",Replacer.ReplaceText,{"porte_empresarial"}),
+				    #"Valor Substituído5" = Table.ReplaceValue(#"Valor Substituído4","Medium (51-200)","Médio (51-200)",Replacer.ReplaceText,{"porte_empresarial"}),
+				    #"Valor Substituído6" = Table.ReplaceValue(#"Valor Substituído5","Large (201-1000)","Grande (201-1000)",Replacer.ReplaceText,{"porte_empresarial"}),
+				    #"Valor Substituído7" = Table.ReplaceValue(#"Valor Substituído6","Platform Engineer","Engenheiro de Plataforma",Replacer.ReplaceText,{"cargo"}),
+				    #"Valor Substituído8" = Table.ReplaceValue(#"Valor Substituído7","Software Engineer","Engenheiro de Software",Replacer.ReplaceText,{"cargo"}),
+				    #"Valor Substituído9" = Table.ReplaceValue(#"Valor Substituído8","QA Engineer","Engenheiro de QA",Replacer.ReplaceText,{"cargo"}),
+				    #"Valor Substituído10" = Table.ReplaceValue(#"Valor Substituído9","Full-time","Tempo Integral",Replacer.ReplaceText,{"tipo_contrato"}),
+				    #"Valor Substituído11" = Table.ReplaceValue(#"Valor Substituído10","Contract","Contrato de tabalho",Replacer.ReplaceText,{"tipo_contrato"}),
+				    #"Valor Substituído12" = Table.ReplaceValue(#"Valor Substituído11","Part-time","Meio Período",Replacer.ReplaceText,{"tipo_contrato"}),
+				    #"Valor Substituído13" = Table.ReplaceValue(#"Valor Substituído12","Remote","Remoto",Replacer.ReplaceText,{"formato_trabalho"}),
+				    #"Valor Substituído14" = Table.ReplaceValue(#"Valor Substituído13","Hybrid","Híbrido",Replacer.ReplaceText,{"formato_trabalho"}),
+				    #"Outras Colunas Removidas" = Table.SelectColumns(#"Valor Substituído14",{"id_funcionario", "skills.1", "skills.2", "skills.3", "skills.4", "skills.5", "skills.6", "skills.7", "skills.8", "primary_skill", "linguas", "certificados.1", "certificados.2", "certificados.3"}),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Outras Colunas Removidas",{"id_funcionario"}),
+				    #"Índice Adicionado" = Table.AddIndexColumn(#"Colunas Removidas", "Índice", 1, 1, Int64.Type),
+				    #"Colunas Reordenadas" = Table.ReorderColumns(#"Índice Adicionado",{"Índice", "skills.1", "skills.2", "skills.3", "skills.4", "skills.5", "skills.6", "skills.7", "skills.8", "primary_skill", "linguas", "certificados.1", "certificados.2", "certificados.3"}),
+				    #"Colunas Renomeadas15" = Table.RenameColumns(#"Colunas Reordenadas",{{"Índice", "id_perfil"}}),
+				    #"Duplicatas Removidas" = Table.Distinct(#"Colunas Renomeadas15", {"skills.1", "skills.2", "skills.3", "skills.4", "skills.5", "skills.6", "skills.7", "skills.8", "primary_skill", "linguas", "certificados.1", "certificados.2", "certificados.3"}),
+				    #"Erros Removidos" = Table.RemoveRowsWithErrors(#"Duplicatas Removidas", {"skills.1", "skills.2", "skills.3", "skills.4", "skills.5", "skills.6", "skills.7", "skills.8", "primary_skill", "linguas", "certificados.1", "certificados.2", "certificados.3"})
+				in
+				    #"Erros Removidos"
+				```
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

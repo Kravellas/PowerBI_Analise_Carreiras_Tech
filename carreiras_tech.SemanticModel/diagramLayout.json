@@ -88,19 +88,6 @@
         },
         {
           "location": {
-            "x": 1734.7973562590239,
-            "y": 552.10582910786809
-          },
-          "nodeIndex": "_Medidas",
-          "nodeLineageTag": "7d300411-7984-4c5a-ac77-0930c2806cc2",
-          "size": {
-            "height": 104,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
             "x": 2014.5048545426055,
             "y": 459.23614210820193
           },
@@ -111,10 +98,22 @@
             "width": 234
           },
           "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1734.7973562590239,
+            "y": 552.10582910786809
+          },
+          "nodeIndex": "_medidas",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "Todas as tabelas",
-      "zoomValue": 24.967196396556869,
+      "zoomValue": 49.590342827053831,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,

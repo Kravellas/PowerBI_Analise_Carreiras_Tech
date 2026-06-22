@@ -1,0 +1,74 @@
+table dim_calendario
+	lineageTag: 8b469a09-0018-488a-a37a-a011bc09d2ae
+	dataCategory: Time
+
+	column Date
+		isKey
+		formatString: General Date
+		lineageTag: fa190a65-a2e2-4333-b407-90af565edf5e
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ano
+		formatString: 0
+		lineageTag: 2768d6f4-0ab1-4da9-a543-cd4c5b85507f
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Ano]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mes_Numero
+		formatString: 0
+		lineageTag: 4cbc39b3-7c36-4248-8dfa-3d6fb91084c8
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Mes_Numero]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mes_Nome
+		lineageTag: b70b7298-8b69-4231-9ae2-b6273eca8dbf
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Mes_Nome]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Trimestre
+		lineageTag: ee927b3e-f4df-431c-a6f5-5a8d9651dcbb
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Trimestre]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ano_Mes
+		lineageTag: 77fac07d-5ff7-4e96-b652-e1cb351bb143
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Ano_Mes]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_calendario = calculated
+		mode: import
+		source = ```
+				
+				/* Cria uma tabela de calendário contínua e adiciona colunas de apoio */
+				ADDCOLUMNS (
+				    // Cria datas diárias cobrindo o ano de 2023
+				    CALENDAR(DATE(2023, 1, 1), DATE(2023, 12, 31)), 
+				    "Ano", YEAR ( [Date] ),
+				    "Mes_Numero", MONTH ( [Date] ),
+				    "Mes_Nome", FORMAT ( [Date], "MMMM" ),
+				    "Trimestre", "Q" & FORMAT ( [Date], "Q" ),
+				    "Ano_Mes", FORMAT ( [Date], "YYYY-MM" )
+				)
+				```
+
+	annotation PBI_Id = 692097fb5d2744d8887565f3d41b6e26
+
