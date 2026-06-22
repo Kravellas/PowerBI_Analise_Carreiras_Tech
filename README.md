@@ -1,7 +1,4 @@
 # Fatores Salariais em Tecnologia
-![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![DAX](https://img.shields.io/badge/DAX-00599C?style=for-the-badge&logo=microsoft&logoColor=white)
-![Data Modeling](https://img.shields.io/badge/Data_Modeling-Star_Schema-brightgreen?style=for-the-badge)
 
 > **Pergunta Central:** *Quais fatores (habilidades, experiência, gênero, localização) realmente aumentam o salário no mercado de tecnologia?*
 
@@ -10,11 +7,6 @@
 Este projeto de **Business Intelligence e People Analytics** foi desenvolvido com o objetivo de mapear e quantificar os fatores que influenciam a remuneração de profissionais de tecnologia. 
 
 Através da análise de um dataset complexo, o modelo investiga não apenas o prêmio salarial gerado por competências técnicas (Skills), mas também realiza uma auditoria demográfica profunda para identificar possíveis disparidades salariais de gênero (Gender Pay Gap) e o impacto de modelos de trabalho na retenção de talentos.
-
-### Visão Geral do Dashboard
-
-> **[COLOQUE AQUI UM PRINT SCREEN DO SEU DASHBOARD FINALIZADO]**
-> *(Exemplo de como inserir a imagem: `![Dashboard de Salários](link_da_sua_imagem.png)`)*
 
 ---
 
