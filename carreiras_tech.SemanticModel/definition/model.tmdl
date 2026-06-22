@@ -21,5 +21,9 @@ ref table dim_skills_profile
 ref table _Medidas
 ref table dim_calendario
 
+ref role Diretor_Global_RH
+ref role Gestor_BackEnd
+ref role Recrutador_Australia
+
 ref cultureInfo pt-BR
 

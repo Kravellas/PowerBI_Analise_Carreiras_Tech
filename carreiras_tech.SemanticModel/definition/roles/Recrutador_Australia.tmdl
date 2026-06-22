@@ -1,0 +1,7 @@
+role Recrutador_Australia
+	modelPermission: read
+
+	tablePermission dim_location = CONTAINSSTRING([local_trabalho], "Sydney, Australia")
+
+	annotation PBI_Id = 18aada33a4ca46359aba35fc7de4863d
+
